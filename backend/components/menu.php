@@ -1,4 +1,5 @@
 <!-- navbar -->
+<?php session_start(); ?>
 <nav class="navbar navbar-custom navbar-fixed-top">
   <div class="container-fluid">
 	<div class="navbar-header">
@@ -10,7 +11,7 @@
             <li><a href="#">CONTACT</a></li>
         <li class="dropdown">
           <a class="dropdown-toggle" data-toggle="dropdown" href="#">
-            Hello Admin <span class="caret"></span>
+            <?= $_SESSION['fullname'] ?> <span class="caret"></span>
           </a>
 	        <ul class="dropdown-menu">
 	            <li><a href="#">Logout</a></li>
