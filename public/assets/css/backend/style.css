@@ -1,0 +1,57 @@
+.navbar.navbar-custom {
+  height: 70px;
+  background: #3195E7;
+  border-radius: 0;
+  border: none;
+  padding-top: 10px;
+}
+.navbar-custom .navbar-header .navbar-toggle,
+.navbar-custom .navbar-header .navbar-toggle:hover,
+.navbar-custom .navbar-header .navbar-toggle:focus {
+  border: none;
+  background: none;
+}
+.navbar-custom .navbar-header .navbar-toggle .icon-bar {
+  background: #fff;
+}
+.navbar-custom .collapse .navbar-nav > li > a,
+.navbar-custom .navbar-brand {
+  color: #fff;
+  font-family: tahoma;
+}
+.navbar-custom .collapse .navbar-nav > li > a:hover,
+.navbar-custom .collapse .navbar-nav > li > a:focus {
+  background: #264583;
+  color: #fff;
+  display: block;
+}
+.navbar-custom .collapse .navbar-nav .dropdown-menu {
+  margin-top: 10px;
+}
+@media (max-width: 767px) {
+.navbar-custom .navbar-collapse {
+  background: #264583;
+}
+}
+
+.dropdown-menu {
+  background-color: #264583;
+}
+
+.dropdown-menu li a {
+  color:white;
+}
+
+.content-head {
+  background-color: #3195E7;
+  color: white;
+  margin-top: 10px;
+  margin-bottom: 10px;
+  border-radius: 5px;
+  padding: 10px;
+}
+
+.content {
+  border:1px solid black;
+  border-radius: 5px;
+}
