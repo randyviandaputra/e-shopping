@@ -17,7 +17,9 @@
               include "modules/product/add.php";
             } elseif (isset($_GET['saveProduct'])) {
               include "modules/product/save.php";
-            } 
+            } elseif (isset($_GET['searchProduct'])) {
+              include "modules/product/search.php";
+            }
             else {
               include "components/content.php";
             }
