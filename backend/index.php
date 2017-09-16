@@ -11,9 +11,13 @@
           <?php include "components/menu.php"; ?>
 
           <?php
-            if (isset($_GET['index'])) {
-              // include "";
-            }
+            if (isset($_GET['product'])) {
+              include "modules/product/list.php";
+            } elseif (isset($_GET['addProduct'])) {
+              include "modules/product/add.php";
+            } elseif (isset($_GET['saveProduct'])) {
+              include "modules/product/save.php";
+            } 
             else {
               include "components/content.php";
             }

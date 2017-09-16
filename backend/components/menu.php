@@ -7,8 +7,8 @@
 	</div>
     <div class="collapse navbar-collapse">
 	    <ul class="nav navbar-nav navbar-right">
-        <li><a href="#"><span class="glyphicon glyphicon-home"></span> HOME</a></li>
-            <li><a href="#">CONTACT</a></li>
+        <li><a href="?"><span class="glyphicon glyphicon-home"></span> Home</a></li>
+            <li><a href="?product"><span class="glyphicon glyphicon-shopping-cart"></span> Products</a></li>
         <li class="dropdown">
           <a class="dropdown-toggle" data-toggle="dropdown" href="#">
             <?= $_SESSION['fullname'] ?> <span class="caret"></span>
