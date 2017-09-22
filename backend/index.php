@@ -11,14 +11,32 @@
           <?php include "components/menu.php"; ?>
 
           <?php
+            // Product
             if (isset($_GET['product'])) {
               include "modules/product/list.php";
             } elseif (isset($_GET['addProduct'])) {
               include "modules/product/add.php";
             } elseif (isset($_GET['saveProduct'])) {
               include "modules/product/save.php";
-            } elseif (isset($_GET['searchProduct'])) {
-              include "modules/product/search.php";
+            } elseif (isset($_GET['editProduct'])) {
+              include "modules/product/edit.php";
+            } elseif (isset($_GET['editedProduct'])) {
+              include "modules/product/edited.php";
+            } elseif (isset($_GET['deleteProduct'])) {
+              include "modules/product/delete.php"; 
+            // Categories
+            } elseif (isset($_GET['categories'])) {
+              include "modules/categories/list.php";
+            } elseif (isset($_GET['addCategory'])) {
+              include "modules/categories/add.php";
+            } elseif (isset($_GET['saveCategory'])) {
+              include "modules/categories/save.php";
+            } elseif (isset($_GET['editCategory'])) {
+              include "modules/categories/edit.php";
+            } elseif (isset($_GET['editedCategory'])) {
+              include "modules/categories/edited.php";
+            } elseif (isset($_GET['deleteCategory'])) {
+              include "modules/categories/delete.php";
             }
             else {
               include "components/content.php";

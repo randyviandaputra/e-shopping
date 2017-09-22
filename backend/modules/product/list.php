@@ -2,7 +2,7 @@
   <div class="row">
     <div class="col-md-12 content">
       <h3 class="content-head"><span class="glyphicon glyphicon-list"></span> List Product</h3>
-      <div class="col-md-10">
+      <div class="col-md-12">
         <?php  
           if (isset($_GET['addProductSuccess'])) {
             echo "<div class='alert alert-success'>Success, Add Product !!</div>";
@@ -12,6 +12,14 @@
             echo "<div class='alert alert-danger'>Sorry, Size too large !!</div>";
           } elseif (isset($_GET['addProductExtension'])) {
             echo "<div class='alert alert-danger'>Extention must be png, jpg, and jpeg !!</div>";
+          } elseif (isset($_GET['editProductSuccess'])) {
+            echo "<div class='alert alert-success'>Success, Edit Product !!</div>";
+          } elseif (isset($_GET['editProductFail'])) {
+            echo "<div class='alert alert-danger'>Failed, Edit Product !!</div>";
+          } elseif (isset($_GET['deleteProductSuccess'])) {
+            echo "<div class='alert alert-success'>Success, Delete Product !!</div>";
+          } elseif (isset($_GET['deleteProductFail'])) {
+            echo "<div class='alert alert-danger'>Failed, Delete Product !!</div>";
           }
         ?>
         <br>
@@ -63,7 +71,7 @@
                   JOIN product_categories pc ON p.category_id = pc.category_id
               ";
               if (!empty($search) || !empty($category_id)) {
-                $sql .= "WHERE p.product_name LIKE '%".$search."%' AND p.category_id = '$category_id'";
+                $sql .= "WHERE p.product_name LIKE '%".$search."%' || p.category_id = '$category_id'";
               }
               $query = mysql_query($sql);
               $count = mysql_num_rows($query);
@@ -82,8 +90,8 @@
                       <td><?= $data['category_name'] ?></td>
                       <td><?= $data['product_publish'] ?></td>
                       <td>
-                        <a href='?editkategori&id=<?= $data['product_id'] ?>' class='btn btn-xs btn-success'><i class='glyphicon glyphicon-edit'></i> Edit</a>
-                        <a href='?hapuskategori&id=<?= $data['product_id'] ?>' class='btn btn-xs btn-danger'><i class='glyphicon glyphicon-trash'></i> Delete</a>
+                        <a href='?editProduct&id=<?= $data['product_id'] ?>' class='btn btn-xs btn-success'><i class='glyphicon glyphicon-edit'></i> Edit</a>
+                        <a href='?deleteProduct&id=<?= $data['product_id'] ?>' class='btn btn-xs btn-danger'><i class='glyphicon glyphicon-trash'></i> Delete</a>
                       </td>
                     </tr>
               <?php

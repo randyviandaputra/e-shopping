@@ -9,6 +9,7 @@
 	    <ul class="nav navbar-nav navbar-right">
         <li><a href="?"><span class="glyphicon glyphicon-home"></span> Home</a></li>
             <li><a href="?product"><span class="glyphicon glyphicon-shopping-cart"></span> Products</a></li>
+            <li><a href="?categories"><span class="glyphicon glyphicon-tasks"></span> Categories</a></li>
         <li class="dropdown">
           <a class="dropdown-toggle" data-toggle="dropdown" href="#">
             <?= $_SESSION['fullname'] ?> <span class="caret"></span>
