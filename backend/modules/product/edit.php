@@ -37,7 +37,7 @@
             <div class="col-sm-10">
               <div class="input-group">
                 <div class="input-group-addon">Rp</div>
-                <input type="number" name="product_price" class="form-control" id="inputEmail3" placeholder="Product Price" value="<?= $data['product_price']?>">
+                <input type="number" name="product_price" class="form-control" id="inputEmail3" placeholder="Product Price" value="<?= (int) $data['product_price']?>">
                 <div class="input-group-addon">00</div>
               </div>
             </div>
