@@ -6,13 +6,14 @@
     <meta name="description" content="">
     <meta name="author" content="">
     <title>Home | E-Shopper</title>
-    <link href="/public/assets/css/bootstrap.min.css" rel="stylesheet">
-    <link href="/public/assets/css/font-awesome.min.css" rel="stylesheet">
-    <link href="/public/assets/css/prettyPhoto.css" rel="stylesheet">
-    <link href="/public/assets/css/price-range.css" rel="stylesheet">
-    <link href="/public/assets/css/animate.css" rel="stylesheet">
-    <link href="/public/assets/css/main.css" rel="stylesheet">
-    <link href="/public/assets/css/responsive.css" rel="stylesheet">
+    <link href="../public/assets/css/bootstrap.min.css" rel="stylesheet">
+    <link href="../public/assets/css/font-awesome.min.css" rel="stylesheet">
+    <link href="../public/assets/css/prettyPhoto.css" rel="stylesheet">
+    <link href="../public/assets/css/price-range.css" rel="stylesheet">
+    <link href="../public/assets/css/animate.css" rel="stylesheet">
+    <link href="../public/assets/css/main.css" rel="stylesheet">
+    <link href="../public/assets/css/responsive.css" rel="stylesheet">
+    <link href="../public/assets/css/style.css" rel="stylesheet">
     <!--[if lt IE 9]>
     <script src="js/html5shiv.js"></script>
     <script src="js/respond.min.js"></script>
@@ -107,7 +108,7 @@
                         </div>
                         <div class="mainmenu pull-left">
                             <ul class="nav navbar-nav collapse navbar-collapse">
-                                <li><a href="index.html" class="active">Home</a></li>
+                                <li><a href="?index" class="active">Home</a></li>
                                 <li class="dropdown"><a href="#">Shop<i class="fa fa-angle-down"></i></a>
                                     <ul role="menu" class="sub-menu">
                                         <li><a href="shop.html">Products</a></li>

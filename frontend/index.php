@@ -13,8 +13,8 @@
                     <?php
                         if (isset($_GET['cart'])) {
                             include "modules/cart/list.php";
-                        } elseif (isset($_GET['all'])) {
-                            include "modules/cart/list.php";
+                        } elseif (isset($_GET['category'])) {
+                            include "modules/category/detail.php";
                         }
 
                         else {

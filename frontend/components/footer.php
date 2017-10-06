@@ -75,11 +75,11 @@
     </div>
 
     </footer><!--/Footer-->
-    <script src="/public/assets/js/jquery.js"></script>
-    <script src="/public/assets/js/bootstrap.min.js"></script>
-    <script src="/public/assets/js/jquery.scrollUp.min.js"></script>
-    <script src="/public/assets/js/price-range.js"></script>
-    <script src="/public/assets/js/jquery.prettyPhoto.js"></script>
-    <script src="/public/assets/js/main.js"></script>
+    <script src="../public/assets/js/jquery.js"></script>
+    <script src="../public/assets/js/bootstrap.min.js"></script>
+    <script src="../public/assets/js/jquery.scrollUp.min.js"></script>
+    <script src="../public/assets/js/price-range.js"></script>
+    <script src="../public/assets/js/jquery.prettyPhoto.js"></script>
+    <script src="../public/assets/js/main.js"></script>
 </body>
 </html>

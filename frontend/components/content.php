@@ -1,11 +1,12 @@
 
     <div class="features_items"><!--features_items-->
-        <h2 class="title text-center">All Products</h2>
+        <h2 class="title text-center">New Release</h2>
             <?php
                 include "../config/connection.php";
 
                 $sql = "SELECT p.*, pc.category_name as category_name FROM products p
-                        JOIN product_categories pc ON p.category_id = pc.category_id";
+                        JOIN product_categories pc ON p.category_id = pc.category_id 
+                        ORDER BY p.product_id DESC LIMIT 3";
                 $query = mysql_query($sql);
                 while ($data = mysql_fetch_assoc($query)) {
             ?>
@@ -13,7 +14,7 @@
                 <div class="product-image-wrapper">
                     <div class="single-products">
                         <div class="productinfo text-center">
-                            <img src="/public/uploads/<?= $data['product_image'] ?>" alt="" />
+                            <img src="../public/uploads/<?= $data['product_image'] ?>" alt="" class="img1">
                             <h2><?= $data['product_name'] ?></h2>
                             <h3><?= "Rp " . number_format($data['product_price']) ?></h3>
                             <h4>Stock : <?= $data['product_inStock'] ?></h4>
@@ -38,7 +39,7 @@
                         <div class="product-image-wrapper">
                             <div class="single-products">
                                 <div class="productinfo text-center">
-                                    <img src="/public/assets/images/home/recommend1.jpg" alt="" />
+                                    <img src="../public/assets/images/home/recommend1.jpg" alt="" />
                                     <h2>$56</h2>
                                     <p>Easy Polo Black Edition</p>
                                     <a href="#" class="btn btn-default add-to-cart"><i class="fa fa-shopping-cart"></i>Add to cart</a>
@@ -51,7 +52,7 @@
                         <div class="product-image-wrapper">
                             <div class="single-products">
                                 <div class="productinfo text-center">
-                                    <img src="/public/assets/images/home/recommend2.jpg" alt="" />
+                                    <img src="../public/assets/images/home/recommend2.jpg" alt="" />
                                     <h2>$56</h2>
                                     <p>Easy Polo Black Edition</p>
                                     <a href="#" class="btn btn-default add-to-cart"><i class="fa fa-shopping-cart"></i>Add to cart</a>
@@ -64,7 +65,7 @@
                         <div class="product-image-wrapper">
                             <div class="single-products">
                                 <div class="productinfo text-center">
-                                    <img src="/public/assets/images/home/recommend3.jpg" alt="" />
+                                    <img src="../public/assets/images/home/recommend3.jpg" alt="" />
                                     <h2>$56</h2>
                                     <p>Easy Polo Black Edition</p>
                                     <a href="#" class="btn btn-default add-to-cart"><i class="fa fa-shopping-cart"></i>Add to cart</a>
@@ -79,7 +80,7 @@
                         <div class="product-image-wrapper">
                             <div class="single-products">
                                 <div class="productinfo text-center">
-                                    <img src="/public/assets/images/home/recommend1.jpg" alt="" />
+                                    <img src="../public/assets/images/home/recommend1.jpg" alt="" />
                                     <h2>$56</h2>
                                     <p>Easy Polo Black Edition</p>
                                     <a href="#" class="btn btn-default add-to-cart"><i class="fa fa-shopping-cart"></i>Add to cart</a>
@@ -92,7 +93,7 @@
                         <div class="product-image-wrapper">
                             <div class="single-products">
                                 <div class="productinfo text-center">
-                                    <img src="/public/assets/images/home/recommend2.jpg" alt="" />
+                                    <img src="../public/assets/images/home/recommend2.jpg" alt="" />
                                     <h2>$56</h2>
                                     <p>Easy Polo Black Edition</p>
                                     <a href="#" class="btn btn-default add-to-cart"><i class="fa fa-shopping-cart"></i>Add to cart</a>
@@ -105,7 +106,7 @@
                         <div class="product-image-wrapper">
                             <div class="single-products">
                                 <div class="productinfo text-center">
-                                    <img src="/public/assets/images/home/recommend3.jpg" alt="" />
+                                    <img src="../public/assets/images/home/recommend3.jpg" alt="" />
                                     <h2>$56</h2>
                                     <p>Easy Polo Black Edition</p>
                                     <a href="#" class="btn btn-default add-to-cart"><i class="fa fa-shopping-cart"></i>Add to cart</a>

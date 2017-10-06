@@ -1,7 +1,7 @@
 <?php
 	include "../config/connection.php";
 	$id_category = $_GET['id_category'];
-	$sql_category = "SELECT * FRom product_categories where category_id = '$id_category'";
+	$sql_category = "SELECT * FROM product_categories where category_id = '$id_category'";
 	$query_category = mysql_query($sql_category);
 	$data_category = mysql_fetch_assoc($query_category);
 ?>
@@ -9,7 +9,7 @@
 <div class="features_items"><!--features_items-->
 <h2 class="title text-center"><?= $data_category['category_name'] ?> Items</h2>
 <?php
-	$sql = "SELECT * FRoM products where category_id = '$id_category'";
+	$sql = "SELECT * FROM products where category_id = '$id_category'";
 	$query = mysql_query($sql);
 	$count = mysql_num_rows($query);
 	if ($count == 0) {
