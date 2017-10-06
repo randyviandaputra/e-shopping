@@ -3,7 +3,7 @@
                         <div class="panel-group category-products" id="accordian"><!--category-productsr-->
                             <div class="panel panel-default">
                                     <div class="panel-heading">
-                                        <h4 class="panel-title"><a href="">ALL CATEGORIES</a></h4>
+                                        <h4 class="panel-title"><a href="?categories">ALL CATEGORIES</a></h4>
                                     </div>
                                 </div>
                                 <?php

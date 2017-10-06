@@ -15,6 +15,8 @@
                             include "modules/cart/list.php";
                         } elseif (isset($_GET['category'])) {
                             include "modules/category/detail.php";
+                        } elseif (isset($_GET['categories'])) {
+                            include "modules/category/all.php";
                         }
 
                         else {
